@@ -9,5 +9,5 @@ body {
 }
 
 .full-width {
-  @apply mx-auto max-w-lg p-4 sm:px-0;
+  @apply mx-auto max-w-lg px-4 sm:px-0;
 }
