@@ -7,14 +7,14 @@ const goTo = (href: string) => {
 <template>
   <main class="">
     <div class="">
-      <section class="h-48 relative mb-8 full-width">
+      <section class="relative mb-16 full-width">
         <div
           class="absolute max-w-lg w-[calc(100%-32px)] sm:w-full h-48 bg-emerald-900/60 rounded-xl flex justify-end sm:justify-center items-end font-normal px-8 py-4"
         >
           <div
             class="text-normal sm:text-lg text-white w-full max-w-[150px] sm:max-w-full text-right"
           >
-            Welcome to Home Away From Home.
+            Welcome to your<br>Home Away From Home
           </div>
         </div>
         <img
@@ -23,7 +23,13 @@ const goTo = (href: string) => {
           class="rounded-xl h-48 object-cover w-full"
         />
       </section>
-      <section class="mb-8 mx-auto max-w-sm py-12 flex flex-col justify-center items-center gap-4">
+      <section class="text-3xl text-center bg-emerald-900/30 sm:mx-0 px-12 py-16 mb-16">
+        <div class="full-width">
+          We are a short-term rental hosting company that provides the best comfort possible away
+          from home.
+        </div>
+      </section>
+      <section class="mx-auto max-w-sm flex flex-col justify-center items-center gap-4 pb-16">
         <div class="text-md text-xl">Find our properties listed on:</div>
         <button
           @click="goTo('https://airbnb.com')"
@@ -65,14 +71,15 @@ const goTo = (href: string) => {
             />
           </svg>
         </button>
-        <div class="text-xs text-xl">
-          Privacy policies for your data are listed on the respectice hosting sites.
+        <div class="text-xs text-xl max-w-[200px]">
+          The following policies are listed on the respectice hosting sites:
+          <ul class="mt-2 list-disc list-inside">
+            <li>Refund and dispute policy</li>
+            <li>Cancelation policy</li>
+          </ul>
         </div>
-      </section>
-      <section class="text-3xl text-center bg-emerald-900/30 sm:mx-0 px-12 py-16">
-        <div class="full-width">
-          We are a short-term rental hosting company that provides the best comfort possible away
-          from home.
+        <div class="text-xs">
+          For support inquiries,<br><a href="mailto:support&#64;comfycorners.rentals?subject=Support request from the website" class="text-emerald-800 font-bold underline">please contact us here.</a>
         </div>
       </section>
     </div>
